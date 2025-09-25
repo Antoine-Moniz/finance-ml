@@ -8,19 +8,21 @@ Un mini-projet d'apprentissage automatique en Python, construit avec [Poetry](ht
 - Apprendre à écrire des tests unitaires avec **pytest**.
 - Automatiser l’intégration continue (CI) avec **GitHub Actions**.
 
-## Structure du projet
+## 📂 Structure du projet
 
+```text
 finance-ml/
-├── .github/workflows/ # Workflows GitHub Actions (tests automatiques)
-├── src/my_package/ # Code source du package
-│ ├── init.py
-│ └── linear_models.py
-├── tests/ # Tests unitaires
-│ ├── init.py
-│ └── test_linear_models.py
-├── pyproject.toml # Configuration du projet (Poetry)
-├── poetry.lock # Verrouillage des dépendances
-└── README.md # Documentation du projet
+├── .github/workflows/   # Workflows GitHub Actions (tests automatiques)
+├── src/my_package/      # Code source du package
+│   ├── __init__.py
+│   └── linear_models.py
+├── tests/               # Tests unitaires
+│   ├── __init__.py
+│   └── test_linear_models.py
+├── pyproject.toml       # Configuration du projet (Poetry)
+├── poetry.lock          # Verrouillage des dépendances
+└── README.md            # Documentation du projet
+
 
 ## ⚙️ Installation
 
