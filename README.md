@@ -9,6 +9,7 @@ Un mini-projet d'apprentissage automatique en Python, construit avec [Poetry](ht
 - Automatiser l’intégration continue (CI) avec **GitHub Actions**.
 
 ## Structure du projet
+
 finance-ml/
 ├── .github/workflows/ # Workflows GitHub Actions (tests automatiques)
 ├── src/my_package/ # Code source du package
