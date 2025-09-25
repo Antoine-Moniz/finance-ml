@@ -1,6 +1,9 @@
-name: Run Tests
+name: CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [main]
+  pull_request:
 
 jobs:
   test:
@@ -19,7 +22,28 @@ jobs:
           pip install poetry
           poetry install
 
-
       - name: Run tests
         working-directory: ./finance-ml
         run: poetry run pytest
+
+  publish:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.13'
+
+      - name: Install dependencies
+        working-directory: ./finance-ml
+        run: |
+          pip install poetry
+          poetry install
+
+      - name: Publish package to PyPI
+        working-directory: ./finance-ml
+        run: poetry publish --build --username __token__ --password ${{ secrets.PYPI_TOKEN }}
