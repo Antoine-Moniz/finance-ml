@@ -1,12 +1,12 @@
 [project]
-name = "finance-ml"
-version = "0.1.0"
+name = "finance-ml-amoniz"
+version = "0.2.0"
 description = "Projet d'exercice ML en finance"
 authors = [
-    { name = "Your Name", email = "you@example.com" }
+    { name = "antoine31", email = "antoine.moniz@dauphine.eu" }
 ]
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.9"
 dependencies = [
     "numpy"
 ]
