@@ -1,14 +1,14 @@
-# 📈 finance-ml
+# finance-ml
 
 Un mini-projet d'apprentissage automatique en Python, construit avec [Poetry](https://python-poetry.org/) et testé automatiquement avec [pytest](https://docs.pytest.org/) et [GitHub Actions](https://docs.github.com/en/actions).
 
-## 🚀 Objectifs du projet
+## Objectifs du projet
 - Mettre en place une structure de projet Python propre.
 - Implémenter pas à pas des algorithmes de machine learning appliqués à la finance.
 - Apprendre à écrire des tests unitaires avec **pytest**.
 - Automatiser l’intégration continue (CI) avec **GitHub Actions**.
 
-## 📂 Structure du projet
+## Structure du projet
 finance-ml/
 ├── .github/workflows/ # Workflows GitHub Actions (tests automatiques)
 ├── src/my_package/ # Code source du package
